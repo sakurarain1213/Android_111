@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <fragment
+        android:id="@+id/left_fragment"
+        android:name="com.example.myapplication111.LeftFragment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/right_fragment"
+        android:name="com.example.myapplication111.RightFragment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+
+
+
+    <EditText
+        android:layout_width="226dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:hint="这是第一个界面">
+
+    </EditText>
+
+
+    <Button
+        android:id="@+id/button111"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:layout_weight="2"
+        android:text="跳转到页面2" />
+
+
+
+
+
+</LinearLayout>

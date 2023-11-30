@@ -1,0 +1,101 @@
+
+
+<!--  线性布局 是最常用的Layout  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!-- 线性布局 安卓布局的高度宽度必写  可以嵌套布局  -->
+
+    <EditText
+        android:layout_width="226dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:hint="hello 这是第二个界面">
+    </EditText>
+
+    <Button
+        android:id="@+id/button222"
+        android:layout_width="240dp"
+        android:layout_height="109dp"
+        android:layout_weight="2"
+        android:text="back back" />
+    <!--
+    文本框 按钮等 可以通过设计视图直接拖放
+    生成的同时也会生成相应按钮的xml代码
+
+
+  按钮点击事件  用toast 监听按钮  java类
+
+
+    activity之间的跳转 用 intent信使  写法见ppt
+    intent可以传数据
+     -->
+
+    <TextView
+        android:id="@+id/myTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textColor="#00ffff"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
+    <!--  ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/puppy"/   -->
+
+
+    <CheckBox
+        android:id="@+id/myCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check me"/>
+
+    <!-- 单选框继承自按钮  RadioGroup  可以用监听获得选择内容-->
+
+
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- 下拉框  Java代码中为Spinner设置适配器-->
+
+
+    <!--  ProgressBar进度条  -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:indeterminate="true"
+        android:max="100" />
+
+
+
+    <!--   ListView
+    数据列表页
+    可通过手指上下滑动
+    新数据加载到屏幕中，老数据滚动出屏幕外
+    刷微博，朋友圈等等。    要在java绑定一个数组
+
+    RecyclerView 可重用 更好 可以图片加文本等
+    -->
+
+    <!--   patch图片  可以根据背景拉伸   最经典的就是聊天气泡
+    -->
+
+    <!-- fragment碎片  用于pad 局部 局部页面刷新   迷你activity 有自己的生命周期z
+      -->
+
+
+</LinearLayout>
+
+
+
+
+
