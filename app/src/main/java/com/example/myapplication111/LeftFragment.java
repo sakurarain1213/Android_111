@@ -12,7 +12,7 @@ import android.widget.Button;
 import androidx.fragment.app.Fragment;
 
 public class LeftFragment extends Fragment {
-
+    //change test
     public static final String TAG = "LeftFragment";
 
     @Override
